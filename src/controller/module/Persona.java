@@ -1,57 +1,34 @@
 package controller.module;
 
 public class Persona {
-    private String nombre;
-    private String apellido;
-    private int edad;
-    private String direccion;
-    private String telefono;
+    private int code;
+    private String name;
 
-    public Persona(){}
-    public Persona(String nombre, String apellido, int edad, String direccion, String telefono) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.direccion = direccion;
-        this.telefono = telefono;
+    public Persona(){
     }
-    // Getters y Setters    
-    public String getNombre() {
-        return nombre;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public Persona(int code, String name) {
+        this.code = code;
+        this.name = name;
     }
 
-    public String getApellido() {
-        return apellido;
+    public int getCode() {
+        return code;
     }
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setCode(int code) {
+        this.code = code;
     }
-
-    public int getEdad() {
-        return edad;
+    public String getName() {
+        return name;
     }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setName(String name) {
+        this.name = name;
     }
 
-
-    public String getDireccion() {
-        return direccion;
+    public String toString() {
+        return "Persona{" +
+                "code=" + code +
+                ", name='" + name + '\'' +
+                '}';
+                
     }
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    
 }
