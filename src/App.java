@@ -1,9 +1,12 @@
 import controller.MetodoBusqueda;
+import controller.MetodoByte;
 import controller.module.Persona;
 import views.ShowConsole;
+import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
-        MetodoBusqueda busqueda = new MetodoBusqueda();
+        
+        Scanner leer = new Scanner(System.in);
         Persona[] personas = new Persona[7];
         personas[0] = new Persona(101, "Juan");
         personas[1] = new Persona(102, "Maria");
@@ -15,8 +18,11 @@ public class App {
         /*Persona numeroBuscado = new Persona(104, "Ana");
         int resultado = busqueda.busquedaLineal(personas, numeroBuscado);
         System.out.println("El resultado de la busqueda es: " + resultado);}*/
-        ;
-
+        MetodoByte metodoByte = new MetodoByte(personas);
+        //System.out.println("Ingrese el codigo a buscar: ");
+        //int codigo = leer.nextInt();
+        //metodoByte.findPersonByCode(codigo);
+        metodoByte.showPersonByCode();
         
 
 

@@ -11,4 +11,7 @@ public class ShowConsole {
         int code = leer.nextInt();
         return code;
     }
+    public void MostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
 }
